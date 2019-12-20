@@ -1,0 +1,49 @@
+body,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 400px;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.button {
+    outline: none;
+    border: none;
+    margin-top: 350px;
+    width: 35px;
+    height: 35px;
+    border-radius: 3em;
+    cursor: pointer;
+}
+
+.button:first-child {
+    background: url('../img/prev.png') center, center;
+    background-repeat: no-repeat;
+    background-color: gray;
+}
+
+.button:last-child {
+    background: url('../img/next.png') center, center;
+    background-repeat: no-repeat;
+    background-color: gray;
+}
+
+.images img {
+    position: absolute;
+    max-width: 600px;
+    left: 12%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.opacity-active {
+    opacity: 1 !important;
+}
